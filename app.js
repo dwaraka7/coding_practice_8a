@@ -135,7 +135,7 @@ app.delete("/todos/:todoId/", async (req, res) => {
 });
 
 //TEST
-app.get("/todo/", async (req, res) => {
+app.get("/all/", async (req, res) => {
   const todoIdQuery1 = `
     SELECT * FROM todo ORDER BY id;`;
   const todo1 = await db.all(todoIdQuery1);
